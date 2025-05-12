@@ -4,6 +4,7 @@
 .editorconfig
 .gitattributes
 .gitignore
+phpstan.neon
 README.md
 
 tests/
