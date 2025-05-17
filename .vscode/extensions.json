@@ -1,0 +1,8 @@
+{
+  "recommendations": [
+    "laravel.vscode-laravel",
+    "bmewburn.vscode-intelephense-client",
+    "open-southeners.laravel-pint",
+    "sanderronde.phpstan-vscode"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "[php]": {
+    "editor.defaultFormatter": "open-southeners.laravel-pint",
+    "editor.formatOnSave": true
+  },
+  "php.suggest.basic": false,
+  "phpstan.binCommand": [
+    "./vendor/bin/sail",
+    "bin",
+    "phpstan",
+    "--memory-limit=1G",
+  ],
+  "phpstan.enabled": true,
+  "phpstan.paths": {
+    "${workspaceFolder}": "/var/www/html"
+  }
+}
