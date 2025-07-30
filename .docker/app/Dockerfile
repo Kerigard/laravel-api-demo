@@ -30,6 +30,10 @@ ARG WWWGROUP
 ARG WWWUSER
 ARG APP_USER
 
+COPY ./.docker/app/xdebug.ini /usr/local/etc/php/conf.d/docker-xdebug.ini
+
+RUN pecl install xdebug && docker-php-ext-enable xdebug
+
 COPY --from=composer:2 /usr/bin/composer /usr/bin/composer
 
 RUN git config --global --add safe.directory /var/www/html
